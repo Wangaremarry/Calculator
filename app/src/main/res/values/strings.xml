@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalculatorAssesment</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="enter_next_value">Enter next value</string>
+</resources>
