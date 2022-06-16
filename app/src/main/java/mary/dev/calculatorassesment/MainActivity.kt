@@ -52,10 +52,8 @@ class MainActivity : AppCompatActivity() {
             var mod=etfirstvalue.text.toString().toInt()
             var domod=etsecondvalue.text.toString().toInt()
             modulus(mod,domod)
-            validatecalculation()
-
         }
-
+        validatecalculation()
     }
     fun add(num1:Int, num2:Int){
         var sum=num1+num2
@@ -74,12 +72,11 @@ class MainActivity : AppCompatActivity() {
         tvresults.text=remainder.toString()
     }
     fun  validatecalculation() {
-        var valueone=etfirstvalue.text.toString()
-        var valuetwo=etsecondvalue.text.toString()
         var error=false
         tilfirstvalue.error=null
-        etfirstvalue.error=null
         tilsecondvalue.error=null
+        var valueone=etfirstvalue.text.toString()
+        var valuetwo=etsecondvalue.text.toString()
 
         if (valueone.isBlank()){
             tilfirstvalue.error="Value is required"
@@ -90,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         if (!error){
 
         }
+
     }
 
 }
